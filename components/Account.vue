@@ -2,16 +2,22 @@
 const supabase = useSupabaseClient()
 
 const loading = ref(true)
+
 const username = ref('')
-const website = ref('')
+const email = ref('')
+const website = ref(null)
 const avatar_path = ref('')
 
 loading.value = true
 const user = useSupabaseUser()
 
+if (!user.value) {
+  await navigateTo('/')
+}
+
 let { data } = await supabase
   .from('profiles')
-  .select(`username, website, avatar_url`)
+  .select(`username, website, avatar_url, email`)
   .eq('id', user.value.id)
   .single()
 
@@ -19,6 +25,7 @@ if (data) {
   username.value = data.username
   website.value = data.website
   avatar_path.value = data.avatar_url
+  email.value = data.email
 }
 
 loading.value = false
@@ -29,16 +36,13 @@ async function updateProfile() {
     const user = useSupabaseUser()
 
     const updates = {
-      id: user.value.id,
       username: username.value,
       website: website.value,
       avatar_url: avatar_path.value,
       updated_at: new Date(),
     }
 
-    let { error } = await supabase.from('profiles').upsert(updates, {
-      returning: 'minimal', // Don't return the value after inserting
-    })
+    let { error } = await supabase.from('profiles').update(updates).eq('id', user.value.id)
     if (error) throw error
   } catch (error: any) {
     alert(error.message)
@@ -48,28 +52,20 @@ async function updateProfile() {
 }
 
 async function signOut() {
-  try {
-    loading.value = true
-    let { error } = await supabase.auth.signOut()
-    if (error) throw error
-    user.value = null
-  } catch (error: any) {
-    alert(error.message)
-  } finally {
-    loading.value = false
-  }
+  loading.value = true
+  await supabase.auth.signOut()
+  user.value = null
+  loading.value = false
+  await navigateTo('/')
 }
-import type { Level, RenderAs } from 'qrcode.vue'
-  const value = ref('qrcode')
-  const level = ref<Level>('M')
-  const renderAs = ref<RenderAs>('svg')
+
 </script>
 
 <template>
   <form class="card w-96 bg-neutral shadow-xl mx-auto text-center" @submit.prevent="updateProfile">
     <div>
       <label for="email">Email</label>
-      <input id="email" type="text" :value="user.email" disabled />
+      <input id="email" type="text" :value="email" disabled />
     </div>
     <div>
       <label for="username">Username</label>
@@ -81,12 +77,12 @@ import type { Level, RenderAs } from 'qrcode.vue'
     </div>
 
     <div>
-      <input
+      <button
         type="submit"
-        class="button primary block"
+        class="btn btn-primary"
         :value="loading ? 'Loading ...' : 'Update'"
         :disabled="loading"
-      />
+      >Update</button>
     </div>
 
     <div>
