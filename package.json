@@ -1,0 +1,22 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/tailwindcss": "^6.8.0",
+    "daisyui": "^3.6.3",
+    "nuxt": "^3.7.0"
+  },
+  "dependencies": {
+    "@nuxtjs/supabase": "^1.0.2",
+    "@tailwindcss/typography": "^0.5.9",
+    "qrcode.vue": "^3.4.1"
+  }
+}

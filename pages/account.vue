@@ -1,0 +1,3 @@
+<template>
+    <Account></Account>
+</template>
