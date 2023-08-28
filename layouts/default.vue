@@ -1,6 +1,6 @@
 <template>
     <Navbar />
-    <div class="grid flex justify-center items-center">
+    <div class="flex justify-center items-center">
         <slot />
     </div>  
 </template>

@@ -4,7 +4,7 @@ const user = useSupabaseUser()
 if (user.value) {
     await navigateTo('/account')
 }
-
+console.log(useRuntimeConfig().public.siteUrl)
 </script>
 <template>
     <div class="prose prose-lg mt-10">

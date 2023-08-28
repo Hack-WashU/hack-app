@@ -3,6 +3,8 @@ const supabase = useSupabaseClient()
 
 const loading = ref(false)
 const email = ref('')
+const config = useRuntimeConfig()
+const sent = ref(false)
 
 const handleLogin = async () => {
   try {
@@ -10,11 +12,11 @@ const handleLogin = async () => {
     const { error } = await supabase.auth.signInWithOtp({
         email: email.value,
         options: {
-        emailRedirectTo: 'http://localhost:3000/confirm',
+          emailRedirectTo: config.public.siteUrl + '/confirm',
         }
     })
     if (error) throw error
-    alert('Check your email for the login link!')
+    sent.value = true
   } catch (error) {
     alert(error.error_description || error.message)
   } finally {
@@ -37,6 +39,11 @@ const handleLogin = async () => {
           :value="loading ? 'Loading' : 'Send magic link'"
           :disabled="loading"
         >Send magic link</button>
+      </div>
+    </div>
+    <div class="toast toast-top toast-center" v-if="sent">
+      <div class="alert alert-info flex">
+        <span>Login request sent! Check your email.</span>
       </div>
     </div>
   </form>
