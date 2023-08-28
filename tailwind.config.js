@@ -1,8 +1,5 @@
-import type { Config } from 'tailwindcss'
-
 // Default are on https://tailwindcss.nuxtjs.org/tailwind/config#default-configuration
-export default <Partial<Config>>{
-  theme: {},
+module.exports = {
   plugins: [require("@tailwindcss/typography"), require('daisyui')],
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -11,4 +8,7 @@ export default <Partial<Config>>{
     "./plugins/**/*.{js,ts}",
     "./nuxt.config.{js,ts}",
   ],
+  daisyui: {
+    themes: ["dracula"]
+  }
 }
