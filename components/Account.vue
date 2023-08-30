@@ -7,25 +7,24 @@ const username = ref('')
 const email = ref('')
 const website = ref(null)
 const avatar_path = ref('')
+const checked_in = ref(false)
 
 loading.value = true
 const user = useSupabaseUser()
-
-if (!user.value) {
-  await navigateTo('/')
-}
 
 let { data } = await supabase
   .from('profiles')
   .select(`username, website, avatar_url, email`)
   .eq('id', user.value.id)
   .single()
+  console.log(data)
 
 if (data) {
   username.value = data.username
   website.value = data.website
   avatar_path.value = data.avatar_url
   email.value = data.email
+  checked_in.value = data.checked_in
 }
 
 loading.value = false
@@ -62,21 +61,21 @@ async function signOut() {
 </script>
 
 <template>
-  <form class="card w-96 bg-neutral shadow-xl mx-auto text-center" @submit.prevent="updateProfile">
-    <div>
+  <form class="card w-96 bg-neutral shadow-xl mx-auto text-center items-center" @submit.prevent="updateProfile">
+    <div class="form-control">
       <label for="email">Email</label>
-      <input id="email" type="text" :value="email" disabled />
+      <input id="email" type="text" :value="email" class="input input-bordered w-full max-w-xs" disabled />
     </div>
-    <div>
+    <div class="form-control">
       <label for="username">Username</label>
-      <input id="username" type="text" v-model="username" />
+      <input id="username" type="text" v-model="username" class="input input-bordered w-full max-w-xs" />
     </div>
-    <div>
+    <div class="form-control">
       <label for="website">Website</label>
-      <input id="website" type="url" v-model="website" />
+      <input id="website" type="url" v-model="website" class="input input-bordered w-full max-w-xs" />
     </div>
 
-    <div>
+    <div class="mt-5">
       <button
         type="submit"
         class="btn btn-primary"
@@ -85,7 +84,7 @@ async function signOut() {
       >Update</button>
     </div>
 
-    <div>
+    <div class="m-5">
       <button class="btn btn-secondary" @click="signOut" :disabled="loading">Sign Out</button>
       <qrcode-vue :value="value" :level="level" :render-as="renderAs" />
     </div>

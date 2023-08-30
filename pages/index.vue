@@ -7,8 +7,8 @@ if (user.value) {
 console.log(useRuntimeConfig().public.siteUrl)
 </script>
 <template>
-    <div class="prose prose-lg mt-10">
-        <h1>Confirm your email</h1>
+    <div class="prose prose-lg mt-10 text-center">
+        <h1>Hack WashU Check-In 💻</h1>
         <Auth />
     </div>
 </template>
