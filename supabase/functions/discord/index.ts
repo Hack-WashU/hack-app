@@ -75,9 +75,13 @@ async function home(request: Request) {
         (option: { name: string; value: string }) => option.name === 'secret_key'
       ).value
 
-      let SBQuery = await supabase.from('profiles').select('email, secret_key').eq('email', user_email).single()
+      let SBQuery = await supabase
+      .rpc('verifykey', {
+        user_email: user_email.toLowerCase(), 
+        user_key: user_key
+      })
 
-      if (SBQuery.data.secret_key === user_key) {
+      if (SBQuery.data) {
         // Make post request to update user role
         
         await DiscordRequest(`guilds/${commandData.guild_id}/members/${commandData.member.user.id}/roles/${Deno.env.get('ROLE_ID')}`, {method: "PUT"})
@@ -96,7 +100,7 @@ async function home(request: Request) {
           // input at the top.
           type: 4,
           data: {
-            content: `Incorrect!`,
+            content: `Verification error, try again or contact organizers.`,
           },
         })
       }
@@ -107,7 +111,7 @@ async function home(request: Request) {
         // input at the top.
         type: 4,
         data: {
-          content: `Error: ${error.message}!`,
+          content: `Error: ${error.message}! Contact Jack`,
         },
       })
     }
