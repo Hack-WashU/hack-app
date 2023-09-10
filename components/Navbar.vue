@@ -29,7 +29,7 @@ onMounted(async () => {
                     <li><a>Submenu 2</a></li>
                 </ul>
                 </li>
-                <li><a>Item 3</a></li>
+                <li><a href="/faq">FAQ</a></li>
             </ul>
             </div>
             <a class="btn btn-ghost normal-case text-xl" href="/account">Hack WashU</a>
@@ -46,7 +46,7 @@ onMounted(async () => {
                 </ul>
                 </details>
             </li>
-            <li><a>Item 3</a></li>
+            <li><a href="/faq">FAQ</a></li>
             </ul>
         </div>
         <div class="navbar-end">
