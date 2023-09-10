@@ -24,8 +24,7 @@ if (data) {
         <h1>Account Settings</h1>
         <Account />
         <!-- <h2 >You are checked in! 🎉</h2> -->
-        <InfoComponent v-if="checked_in" />
+        <InfoComponent class="mt-5" v-if="checked_in" />
         <h2 v-else="checked_in">You are not checked in</h2>
-
     </div>
 </template>

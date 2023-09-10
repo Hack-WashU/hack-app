@@ -3,10 +3,7 @@ const supabase = useSupabaseClient()
 
 const loading = ref(true)
 
-const username = ref('')
 const email = ref('')
-const website = ref(null)
-const avatar_path = ref('')
 const checked_in = ref(false)
 
 loading.value = true
@@ -14,15 +11,12 @@ const user = useSupabaseUser()
 
 let { data } = await supabase
   .from('profiles')
-  .select(`username, website, avatar_url, email`)
+  .select(`email`)
   .eq('id', user.value.id)
   .single()
   console.log(data)
 
 if (data) {
-  username.value = data.username
-  website.value = data.website
-  avatar_path.value = data.avatar_url
   email.value = data.email
   checked_in.value = data.checked_in
 }
@@ -35,9 +29,6 @@ async function updateProfile() {
     const user = useSupabaseUser()
 
     const updates = {
-      username: username.value,
-      website: website.value,
-      avatar_url: avatar_path.value,
       updated_at: new Date(),
     }
 
@@ -66,23 +57,15 @@ async function signOut() {
       <label for="email">Email</label>
       <input id="email" type="text" :value="email" class="input input-bordered w-full max-w-xs" disabled />
     </div>
-    <div class="form-control">
-      <label for="username">Username</label>
-      <input id="username" type="text" v-model="username" class="input input-bordered w-full max-w-xs" />
-    </div>
-    <div class="form-control">
-      <label for="website">Website</label>
-      <input id="website" type="url" v-model="website" class="input input-bordered w-full max-w-xs" />
-    </div>
 
-    <div class="mt-5">
+    <!--<div class="mt-5">
       <button
         type="submit"
         class="btn btn-primary"
         :value="loading ? 'Loading ...' : 'Update'"
         :disabled="loading"
       >Update</button>
-    </div>
+    </div>-->
 
     <div class="m-5">
       <button class="btn btn-secondary" @click="signOut" :disabled="loading">Sign Out</button>
