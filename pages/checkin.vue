@@ -12,7 +12,7 @@ if (checkin_status && data && !data.checked_in) {
   try {
     const { error } = await supabase.from('profiles').update({ checked_in: true }).eq('id', user.value.id)
     if (error) throw error
-  } catch (error) {
+  } catch (error: any) {
     alert(error.message)
   }
 }
