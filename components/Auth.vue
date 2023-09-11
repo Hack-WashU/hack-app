@@ -28,9 +28,9 @@ const handleLogin = async () => {
 <template>
   <form class="card w-96 bg-neutral shadow-xl mx-auto text-center" @submit.prevent="handleLogin">
     <div class="col-6 form-widget">
-      <p class="description">Sign in via magic link with your email below</p>
+      <p class="description">Sign in via magic link below</p>
       <div>
-        <input class="input input-bordered w-full max-w-xs" type="email" placeholder="Your email" v-model="email" />
+        <input class="input input-bordered w-full max-w-xs" type="email" placeholder="Email" v-model="email" />
       </div>
       <div class="">
         <button

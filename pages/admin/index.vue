@@ -11,5 +11,5 @@ if (data) {
 }
 </script>
 <template>
-<AdminComponent />
+    <GenerateLink class="mt-10"/>
 </template>
