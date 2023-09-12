@@ -11,5 +11,8 @@ if (data) {
 }
 </script>
 <template>
-    <GenerateLink class="mt-10"/>
+    <div class="w-2/4">
+        <AdminSetKey class="mt-10"/>
+        <AdminGenerateLink class="mt-10"/>
+    </div>
 </template>
