@@ -10,7 +10,7 @@ export default defineNuxtConfig({
         redirectOptions: {
             login: '/',
             callback: '/confirm',
-            exclude: ['/', '/faq'],
+            exclude: ['/', '/faq', '/spaces'],
         }
     },
     colorMode: {
