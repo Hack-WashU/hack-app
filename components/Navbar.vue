@@ -23,9 +23,9 @@ onMounted(async () => {
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                 <li><a href="/account">Account</a></li>
                 <li>
-                <a>Parent</a>
+                <a>Resources</a>
                 <ul class="p-2">
-                    <li><a>Submenu 1</a></li>
+                    <li><a href="/spaces">Space Information</a></li>
                     <li><a>Submenu 2</a></li>
                 </ul>
                 </li>
@@ -40,9 +40,9 @@ onMounted(async () => {
             <li><a href="/account">Account</a></li>
             <li tabindex="0">
                 <details>
-                <summary>Parent</summary>
+                <summary>Resources</summary>
                 <ul class="p-2">
-                    <li><a>Submenu 1</a></li>
+                    <li><a href="/spaces">Space Information</a></li>
                     <li><a>Submenu 2</a></li>
                 </ul>
                 </details>
