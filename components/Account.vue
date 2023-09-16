@@ -14,7 +14,6 @@ let { data } = await supabase
   .select(`email`)
   .eq('id', user.value.id)
   .single()
-  console.log(data)
 
 if (data) {
   email.value = data.email

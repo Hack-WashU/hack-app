@@ -20,5 +20,8 @@
         "nuxt": "^3.7.0",
         "qrcode.vue": "^3.4.1",
         "supabase": "^1.88.0"
+    },
+    "dependencies": {
+        "random-words": "^2.0.0"
     }
 }

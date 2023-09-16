@@ -23,8 +23,7 @@ if (data) {
     <div class="prose prose-lg mt-10 text-center">
         <h1>Account Settings</h1>
         <Account />
-        <!-- <h2 >You are checked in! 🎉</h2> -->
-        <InfoComponent class="mt-5" v-if="checked_in" />
+        <VerifyInfo v-if="checked_in" class="mt-5" />
         <h2 v-else="checked_in">You are not checked in</h2>
     </div>
 </template>
