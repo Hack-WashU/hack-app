@@ -5,5 +5,26 @@
             "Free all weekend!",
             "but not afterwards"
         ]
-    }
+    },
+    {
+        "name": "Cupples II, 001",
+        "info": [
+            "Available Saturday 9/14 at 10am",
+            "Closes Sunday 9/15 at 3pm"
+        ]
+    },
+    {
+        "name": "Cupples II, 007",
+        "info": [
+            "Available Saturday 9/14 at 3pm",
+            "Closes Sunday 9/15 at 11am"
+        ]
+    },
+    {
+        "name": "Cupples II, 011",
+        "info": [
+            "Available Saturday 9/14 at 3pm",
+            "Closes Sunday 9/15 at 11am"
+        ]
+    },
 ]
