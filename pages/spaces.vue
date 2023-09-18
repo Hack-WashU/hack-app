@@ -1,6 +1,5 @@
 <script setup lang="ts">
 let { body } = await queryContent().where({ 'title': 'Spaces' }).findOne()
-console.log(body[0].items)
 </script>
 <template>
     <div class="prose prose-lg mt-10">
