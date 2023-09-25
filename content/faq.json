@@ -8,7 +8,97 @@
             },
             {
                 "Question": "What is a hackathon?",
-                "Answer": "A hackathon is an invention marathon where students build software around a central theme (this year's theme is space). At Hack WashU, you can look forward to amazing prizes, engaging speakers, and tons of skilled mentors!"
+                "Answer": "A hackathon is a weekend-long invention marathon where hackers work nonstop to build a program/app/whatever they want!"
+            },
+            {
+                "Question": "What if I don't have any experience?",
+                "Answer": "That’s totally okay. You don’t need any (like actually 0). We will be holding workshops during the event to get you building your first web application from scratch. Additionally, you will only be judged against projects of similar experience level."
+            }
+        ]
+    },
+    {
+        "Section": "Registration",
+        "Questions": [
+            {
+                "Question": "I didn't register in time. Can I still participate?",
+                "Answer": "If you’re a WashU student, then YES! We’ll have a walk-in option for students who didn’t submit their applications in time (with the difference being that you may not receive swag). Please fill out the application as you normally would and then we’ll be in touch with more info in a few weeks."
+            },
+            {
+                "Question": "How are acceptances being handled?",
+                "Answer": "Acceptances are primarily being handled by prioritizing hackers who can attend in-person, and that we can support in-line with university policy. We guaruntee acceptance for all WashU students"
+            },
+            {
+                "Question": "How do late registrations work?",
+                "Answer": "We’ll have a walk-in option for students who didn’t submit their applications in time (with the difference being that you may not receive swag). Please fill out the application as you normally would and then we’ll be in touch with more info in a few weeks."
+            }
+        ]
+    },
+    {
+        "Section": "Logistics",
+        "Questions": [
+            {
+                "Question": "When and where is Hack WashU?",
+                "Answer": "Hack WashU will take place at Washington University in St. Louis from October 14th to the 15th. Please plan on attending in-person! The event will primarily take place in Lopata/Urbauer Halls."
+            },
+            {
+                "Question": "When does Hack WashU start?",
+                "Answer": "Event check-in will begin at 8am on 10/14, with the opening ceremony taking place at 9am. This is required for all hackers. Yes it’s early, but we’ll be going over extremely important logistical information for the entire weekend. Since this is our first time holding a completely in-person event, please bear with us if there are hiccups with checking in hackers!"
+            },
+            {
+                "Question": "When is early check-in?",
+                "Answer": "We will be hosting early check-in on the evening of Friday 10/13, as well as running a team-matching event! This event is for WashU students only. Keep an eye out for more information about this!"
+            }
+        ]
+    },
+    {
+        "Section": "Prizes",
+        "Questions": [
+            {
+                "Question": "What prizes will there be?",
+                "Answer": "Nice try :)"
+            },
+            {
+                "Question": "What do I need to do to be eligible for prizes?",
+                "Answer": "To be eligible for prizes, you need to submit your project to a division and then either of our tracks. To receive any prize, you must fill out a tax form."
+            },
+            {
+                "Question": "Tax form?!?",
+                "Answer": "Yup. For all prizes that are funded by Hack WashU, before receiving the prize you need to sign a form with your tax information. If you’re a WashU student, all we need is your Student ID number, but if you are not a WashU student then we’ll need your Social Security Number. We do not hold onto these forms, they go straight to WashU’s finance department."
+            }
+        ]
+    },
+    {
+        "Section": "Sponsors",
+        "Questions":[
+            {
+                "Question": "Who are this years' sponsors?",
+                "Answer": "Our sponsors this year are Mastercard, RGA, Spectrum, Anheuser-Busch, and Github (via MLH). Our partners include Major League Hacking, Student Technology Services/Tech Den, and the McKelvey School of Engineering"
+            }
+        ]
+    },
+    {
+        "Section": "Swag",
+        "Questions": [
+            {
+                "Question": "How can I make sure that I receive swag?",
+                "Answer": "As long as you registered before the deadline (9/25), we’ll have enough swag for you! You’ll receive it when you check in."
+            }
+        ]
+    },
+    {
+        "Section": "Teams",
+        "Questions": [
+            {
+                "Question": "How big can a team be?",
+                "Answer": "We allow teams of up to 4 people. You are not allowed to go past this number (no exceptions, sorry)."
+            },
+            {
+                "Question": "Can I come with a team that I made before the event?",
+                "Answer": "Absolutely! We encourage you to come to Hack WashU with friends you can work on a project with."
+            },
+            {
+                "Question": "What if I don't have a team?",
+                "Answer": "Don't worry! We'll hold team matching events so you can meet other hackers."
             }
         ]
     }

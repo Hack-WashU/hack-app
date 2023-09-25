@@ -4,6 +4,7 @@ let { body } = await queryContent().findOne()
 <template>
     <div class="prose prose-lg mt-10">
         <h1 class="text-center">Hack WashU FAQ 🤔❓</h1>
+        <p class="text-center">If your question is missing, you can message us on <a href="https://instagram.com/hackwashu">Instagram</a> or send us an email at organizer@hackwashu.com .</p>
         <div v-for="section in body">
             <h3 class="text-center">{{ section.Section }}</h3>
             <div v-for="question in section.Questions" class="collapse bg-base-200 mt-5">
