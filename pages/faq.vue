@@ -2,6 +2,7 @@
 let { body } = await queryContent().findOne()
 </script>
 <template>
+  <div class="flex justify-center">
     <div class="prose prose-lg mt-10">
         <h1 class="text-center">Hack WashU FAQ 🤔❓</h1>
         <div v-for="section in body">
@@ -17,4 +18,5 @@ let { body } = await queryContent().findOne()
             </div>
         </div>
     </div>
+  </div>
 </template>

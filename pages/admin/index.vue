@@ -11,8 +11,10 @@ if (data) {
 }
 </script>
 <template>
-    <div class="w-2/4">
+  <div class="flex justify-center">
+    <div class="w-1/2">
         <AdminSetKey class="mt-10"/>
         <AdminGenerateLink class="mt-10"/>
     </div>
+  </div>
 </template>

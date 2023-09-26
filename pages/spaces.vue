@@ -3,6 +3,7 @@ let { body } = await queryContent().where({ 'title': 'Spaces' }).findOne()
 console.log(body[0].items)
 </script>
 <template>
+  <div class="flex justify-center">
     <div class="prose prose-lg mt-10">
         <h1 class="text-center">Space Information!</h1>
         <div v-for="section in body">
@@ -19,4 +20,5 @@ console.log(body[0].items)
             </div>
         </div>
     </div>
+  </div>
 </template>

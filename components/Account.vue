@@ -32,7 +32,7 @@ async function updateProfile() {
     }
 
     let { error } = await supabase.from('profiles').update(updates).eq('id', user.value.id)
-    if (error) throw error
+    if (error) alert(error.message)
   } catch (error: any) {
     alert(error.message)
   } finally {
@@ -68,7 +68,6 @@ async function signOut() {
 
     <div class="m-5">
       <button class="btn btn-secondary" @click="signOut" :disabled="loading">Sign Out</button>
-      <qrcode-vue :value="value" :level="level" :render-as="renderAs" />
     </div>
   </form>
 </template>

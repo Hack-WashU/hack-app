@@ -1,12 +1,24 @@
+<script setup>
+import {PhDiscordLogo} from '@phosphor-icons/vue'
+
+const supabase = useSupabaseClient();
+const user = useSupabaseUser()
+
+let {data} = await supabase
+    .from('profiles')
+    .select(`email, secret_key`)
+    .eq('id', user.value.id)
+    .single()
+</script>
 <template>
-    <div class="alert shadow-lg">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-info shrink-0 w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-        </svg>
+  <div class="alert shadow-lg w-2/3">
+    <ph-discord-logo :size="40"/>
         <div>
-            <h3 class="font-bold">New message!</h3>
-            <div class="text-xs">You have 1 unread message</div>
+          <div class="text-lg font-bold">Join Discord! Run the following command in #verify to get verified.</div>
+          <div class="text-xs italic">/verify {{ data.email }} {{ data.secret_key }}</div>
+          <div class="text-xs">Note: Discord doesn't like people copy/pasting commands. You'll need to type it out from
+            scratch (sorry)
+          </div>
         </div>
-        <button class="btn btn-sm">See</button>
+    <a class="btn btn-warning btn-sm" href="https://discord.gg/VZmT3Zzeb2">Discord</a>
 </div></template>
