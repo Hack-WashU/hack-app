@@ -6,7 +6,6 @@ const role = ref('')
 onMounted(async () => {
     if (user.value){
         let {data} = await supabase.from('profiles').select(`role`).eq('id', user.value.id).single()
-        console.log(data)
         if (data)
             role.value = data.role
     }

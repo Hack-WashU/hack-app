@@ -4,7 +4,7 @@ const supabase = useSupabaseClient()
 
 watch(user, async () => {
   if (user.value) {
-    let {data, error} = await supabase.from('profiles').select(`checked_in`).eq('id', user.value.id).single()
+    let {data} = await supabase.from('profiles').select(`checked_in`).eq('id', user.value.id).single()
     if(data && !data.checked_in) {
       return navigateTo('/checkin')
     }
@@ -14,5 +14,5 @@ watch(user, async () => {
 </script>
 
 <template>
-  <div>Waiting for login...</div>
+  <div>Waiting for login... If nothing changes, try refreshing the page</div>
 </template>

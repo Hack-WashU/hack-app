@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import {generate} from 'random-words'
+
 // This is the global checkin variable
 // Setting will enable checkins.
 const checkin_status = true;
@@ -10,7 +12,9 @@ const { data } = await supabase.from('profiles').select(`checked_in`).eq('id', u
 
 if (checkin_status && data && !data.checked_in) {
   try {
-    const { error } = await supabase.from('profiles').update({ checked_in: true }).eq('id', user.value.id)
+    const words = generate({exactly: 3, join: '-'})
+    console.log(words)
+    const { error } = await supabase.from('profiles').update({ checked_in: true, secret_key: words }).eq('id', user.value.id)
     if (error) throw error
   } catch (error: any) {
     alert(error.message)

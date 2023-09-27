@@ -2,6 +2,7 @@
 let { body } = await queryContent().findOne()
 </script>
 <template>
+  <div class="flex justify-center">
     <div class="prose prose-lg mt-10">
         <h1 class="text-center">Hack WashU FAQ 🤔❓</h1>
         <p class="text-center">If your question is missing, you can message us on <a href="https://instagram.com/hackwashu">Instagram</a> or send us an email at organizer@hackwashu.com .</p>
@@ -18,4 +19,5 @@ let { body } = await queryContent().findOne()
             </div>
         </div>
     </div>
+  </div>
 </template>
