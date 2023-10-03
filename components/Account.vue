@@ -5,19 +5,36 @@ const loading = ref(true)
 
 const email = ref('')
 const checked_in = ref(false)
+const shirt = ref('')
 
 loading.value = true
 const user = useSupabaseUser()
 
 let { data } = await supabase
   .from('profiles')
-  .select(`email`)
+  .select(`email, checked_in`)
   .eq('id', user.value.id)
   .single()
+
+console.log(data)
 
 if (data) {
   email.value = data.email
   checked_in.value = data.checked_in
+}
+
+let shirtdata = await supabase
+  .from('shirts')
+  .select(`shirt`)
+  .eq('email', data!.email)
+  .single()
+
+console.log(shirtdata.data)
+
+if (shirtdata.data) {
+  shirt.value = shirtdata.data.shirt
+} else {
+  shirt.value = 'No shirt data'
 }
 
 loading.value = false
@@ -56,15 +73,10 @@ async function signOut() {
       <label for="email">Email</label>
       <input id="email" type="text" :value="email" class="input input-bordered w-full max-w-xs" disabled />
     </div>
-
-    <!--<div class="mt-5">
-      <button
-        type="submit"
-        class="btn btn-primary"
-        :value="loading ? 'Loading ...' : 'Update'"
-        :disabled="loading"
-      >Update</button>
-    </div>-->
+    <div class="form-control">
+      <label for="shirt">Shirt Size</label>
+      <input id="shirt" type="text" :value="shirt" class="input input-bordered w-full max-w-xs" disabled />
+    </div>
 
     <div class="m-5">
       <button class="btn btn-secondary" @click="signOut" :disabled="loading">Sign Out</button>
