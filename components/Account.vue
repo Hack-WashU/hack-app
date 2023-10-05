@@ -74,7 +74,7 @@ const determineBackgroundColor = () => {
   } else if (shirt.value === 'S') {
     return 'btn-secondary'
   } else if (shirt.value === 'M') {
-    return 'btn-accent'
+    return 'btn-info'
   } else if (shirt.value === 'L') {
     return 'btn-accent'
   } else if (shirt.value === 'XL') {
