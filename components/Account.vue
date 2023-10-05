@@ -2,10 +2,9 @@
 const supabase = useSupabaseClient()
 
 const loading = ref(true)
-
 const email = ref('')
 const checked_in = ref(false)
-const shirt = ref('')
+const shirt = ref('M')
 
 loading.value = true
 const user = useSupabaseUser()
@@ -32,9 +31,12 @@ let shirtdata = await supabase
 console.log(shirtdata.data)
 
 if (shirtdata.data) {
-  shirt.value = shirtdata.data.shirt
-} else {
-  shirt.value = 'No shirt data'
+  // Validate against Shirt type
+  if (shirtdata.data.shirt === 'XS' || shirtdata.data.shirt === 'S' || shirtdata.data.shirt === 'M' || shirtdata.data.shirt === 'L' || shirtdata.data.shirt === 'XL') {
+    shirt.value = shirtdata.data.shirt
+  } else {
+    shirt.value = 'ERROR'
+  }
 }
 
 loading.value = false
@@ -65,10 +67,27 @@ async function signOut() {
   await navigateTo('/')
 }
 
+// Determine card's background color based on shirt size
+const determineBackgroundColor = () => {
+  if (shirt.value === 'XS') {
+    return 'btn-danger'
+  } else if (shirt.value === 'S') {
+    return 'btn-secondary'
+  } else if (shirt.value === 'M') {
+    return 'btn-accent'
+  } else if (shirt.value === 'L') {
+    return 'btn-accent'
+  } else if (shirt.value === 'XL') {
+    return 'btn-warning'
+  } else {
+    return 'bg-primary'
+  }
+}
+const staticFormClass = "bg-neutral card w-96 shadow-xl mx-auto text-center items-center "
 </script>
 
 <template>
-  <form class="card w-96 bg-neutral shadow-xl mx-auto text-center items-center" @submit.prevent="updateProfile">
+  <form :class="[staticFormClass]" @submit.prevent="updateProfile">
     <div class="form-control">
       <label for="email">Email</label>
       <input id="email" type="text" :value="email" class="input input-bordered w-full max-w-xs" disabled />
@@ -79,7 +98,7 @@ async function signOut() {
     </div>
 
     <div class="m-5">
-      <button class="btn btn-secondary" @click="signOut" :disabled="loading">Sign Out</button>
+      <button class="btn" :class="determineBackgroundColor()" @click="signOut" :disabled="loading">Sign Out</button>
     </div>
   </form>
 </template>
