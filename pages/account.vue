@@ -22,7 +22,7 @@ if (data) {
 <template>
   <div class="flex justify-center">
     <div class="prose prose-lg mt-10 justify-center text-center">
-      <h1>Account Settings</h1>
+      <h1>Account Information</h1>
       <Account/>
     </div>
   </div>
