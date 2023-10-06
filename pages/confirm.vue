@@ -14,5 +14,5 @@ watch(user, async () => {
 </script>
 
 <template>
-  <div>Waiting for login... If nothing changes, try refreshing the page</div>
+  <div>Waiting for login... If nothing changes, try refreshing the page. If that doesn't work, try clicking <a href="/account">here</a>.</div>
 </template>

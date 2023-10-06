@@ -3,7 +3,7 @@ import {generate} from 'random-words'
 
 // This is the global checkin variable
 // Setting will enable checkins.
-const checkin_status = true;
+const checkin_status = false;
 
 const supabase = useSupabaseClient()
 const user = useSupabaseUser()
