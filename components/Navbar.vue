@@ -39,14 +39,9 @@ onMounted(async () => {
           class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
         >
           <li><a href="/account">Account</a></li>
-          <li>
-            <a>Resources</a>
-            <ul class="p-2">
-              <li><a href="/spaces">Space Information</a></li>
-              <li><a href="/schedule">Schedule</a></li>
-              <li><a href="/resources">Project Resources</a></li>
-            </ul>
-          </li>
+          <li><a href="/spaces">Space Information</a></li>
+          <li><a href="/schedule">Schedule</a></li>
+          <li><a href="/resources">Project Resources</a></li>
           <li><a href="/faq">FAQ</a></li>
           <li v-if="role === 'admin'">
             <a class="btn btn-primary" href="/admin">Admin Page</a>
@@ -60,16 +55,9 @@ onMounted(async () => {
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
         <li><a href="/account">Account</a></li>
-        <li tabindex="0">
-          <details>
-            <summary>Resources</summary>
-            <ul class="p-2">
-              <li><a href="/spaces">Space Information</a></li>
-              <li><a href="/schedule">Schedule</a></li>
-              <li><a href="/resources">Project Resources</a></li>
-            </ul>
-          </details>
-        </li>
+        <li><a href="/spaces">Space Information</a></li>
+        <li><a href="/schedule">Schedule</a></li>
+        <li><a href="/resources">Project Resources</a></li>
         <li><a href="/faq">FAQ</a></li>
       </ul>
     </div>
