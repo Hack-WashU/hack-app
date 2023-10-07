@@ -15,8 +15,6 @@ let { data } = await supabase
   .eq('id', user.value.id)
   .single()
 
-console.log(data)
-
 if (data) {
   email.value = data.email
   checked_in.value = data.checked_in
@@ -28,15 +26,15 @@ let shirtdata = await supabase
   .eq('email', data!.email)
   .single()
 
-console.log(shirtdata.data)
-
 if (shirtdata.data) {
-  // Validate against Shirt type
   if (shirtdata.data.shirt === 'XS' || shirtdata.data.shirt === 'S' || shirtdata.data.shirt === 'M' || shirtdata.data.shirt === 'L' || shirtdata.data.shirt === 'XL') {
     shirt.value = shirtdata.data.shirt
   } else {
     shirt.value = 'ERROR'
   }
+} 
+else {
+    shirt.value = 'ERROR'
 }
 
 loading.value = false
