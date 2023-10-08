@@ -2,29 +2,47 @@
     {
         "name": "Lopata Gallery",
         "info": [
-            "Free all weekend!",
-            "but not afterwards"
+            "Available 24/7!",
+            "Food allowed 🍕"
+        ]
+    },
+    {
+        "name": "Lopata 101",
+        "info": [
+            "Available 24/7!",
+            "Food allowed 🍕"
+        ]
+    },
+    {
+        "name": "Urbauer Labs",
+        "info": [
+            "Available 24/7!",
+            "Please do not use the desktop computers!",
+            "Food allowed 🍕"
         ]
     },
     {
         "name": "Cupples II, 001",
         "info": [
             "Available Saturday 9/14 at 10am",
-            "Closes Sunday 9/15 at 3pm"
+            "Closes Sunday 9/15 at 3pm",
+            "NO FOOD ❌"
         ]
     },
     {
         "name": "Cupples II, 007",
         "info": [
             "Available Saturday 9/14 at 3pm",
-            "Closes Sunday 9/15 at 11am"
+            "Closes Sunday 9/15 at 11am",
+            "NO FOOD ❌"
         ]
     },
     {
         "name": "Cupples II, 011",
         "info": [
             "Available Saturday 9/14 at 3pm",
-            "Closes Sunday 9/15 at 11am"
+            "Closes Sunday 9/15 at 11am",
+            "NO FOOD ❌"
         ]
     }
 ]
