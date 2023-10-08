@@ -23,6 +23,7 @@
     },
     "dependencies": {
         "@phosphor-icons/vue": "^2.1.6",
+        "dayjs": "^1.11.10",
         "random-words": "^2.0.0"
     }
 }
