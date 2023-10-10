@@ -9,6 +9,7 @@ const sent = ref(false)
 const handleLogin = async () => {
   try {
     loading.value = true
+    console.log(email.value)
     const { error } = await supabase.auth.signInWithOtp({
         email: email.value,
         options: {
