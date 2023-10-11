@@ -46,26 +46,7 @@ onMounted(async () => {
           <li><a href="/resources">Project Resources</a></li>
           <li><a href="/jobs">Jobs</a></li>
           <li><a href="/faq">FAQ</a></li>
-          <li>
-            <a
-              target="_blank"
-              class="mr-2"
-              v-if="role !== 'admin'"
-              href="https://instagram.com/hackwashu"
-            >
-              <ph-instagram-logo :size="32" />
-            </a>
-          </li>
-          <li>
-            <a
-              target="_blank"
-              class="mr-2"
-              v-if="role !== 'admin'"
-              href="https://twitch.tv/hackwashu/hackwashu"
-            >
-              <ph-twitch-logo :size="32" />
-            </a>
-          </li>
+
           <li v-if="role === 'admin'">
             <a class="btn btn-primary" href="/admin">Admin Page</a>
           </li>
@@ -74,6 +55,22 @@ onMounted(async () => {
       <a class="btn btn-ghost normal-case text-xl" href="/account"
         >Hack WashU</a
       >
+      <div class="end">
+        <a
+          target="_blank"
+          class="mr-2"
+          v-if="role !== 'admin'"
+          href="https://instagram.com/hackwashu"
+          ><ph-instagram-logo :size="32"
+        /></a>
+        <a
+          target="_blank"
+          class="mr-2"
+          v-if="role !== 'admin'"
+          href="https://twitch.tv/hackwashu"
+          ><ph-twitch-logo :size="32"
+        /></a>
+      </div>
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
@@ -106,3 +103,11 @@ onMounted(async () => {
     </div>
   </div>
 </template>
+
+<style>
+.end {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+</style>
