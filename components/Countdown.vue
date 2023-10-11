@@ -9,7 +9,7 @@ dayjs.extend(duration);
 dayjs.extend(utc);
 dayjs.extend(timezone);
 
-const endTime = dayjs.tz("2023-10-7 13:00:00", "America/Chicago");
+const endTime = dayjs.tz("2023-10-15 13:00:00", "America/Chicago");
 const timeLeft = ref<number>(0);
 
 const formattedTime = computed(() => {
