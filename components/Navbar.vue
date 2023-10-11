@@ -2,6 +2,8 @@
 const user = useSupabaseUser();
 const supabase = useSupabaseClient();
 const role = ref("");
+import { PhTwitchLogo } from "@phosphor-icons/vue";
+import { PhInstagramLogo } from "@phosphor-icons/vue";
 
 onMounted(async () => {
   if (user.value) {
@@ -50,8 +52,9 @@ onMounted(async () => {
               class="mr-2"
               v-if="role !== 'admin'"
               href="https://instagram.com/hackwashu"
-              ><img src="../assets/instagram.png" width="24" height="24"
-            /></a>
+            >
+              <ph-instagram-logo :size="32" />
+            </a>
           </li>
           <li>
             <a
@@ -59,8 +62,9 @@ onMounted(async () => {
               class="mr-2"
               v-if="role !== 'admin'"
               href="https://twitch.tv/hackwashu/hackwashu"
-              ><img src="../assets/twitch.png" width="24" height="24"
-            /></a>
+            >
+              <ph-twitch-logo :size="32" />
+            </a>
           </li>
           <li v-if="role === 'admin'">
             <a class="btn btn-primary" href="/admin">Admin Page</a>
@@ -87,16 +91,18 @@ onMounted(async () => {
         class="mr-2"
         v-if="role !== 'admin'"
         href="https://instagram.com/hackwashu"
-        ><img src="../assets/instagram.png" width="24" height="24"
+        ><ph-instagram-logo :size="32"
       /></a>
       <a
         target="_blank"
         class="mr-2"
         v-if="role !== 'admin'"
         href="https://twitch.tv/hackwashu"
-        ><img src="../assets/twitch.png" width="24" height="24"
+        ><ph-twitch-logo :size="32"
       /></a>
-      <a v-if="role === 'admin'" href="/admin">Admin Page</a>
+      <a class="btn btn-primary" v-if="role === 'admin'" href="/admin"
+        >Admin Page</a
+      >
     </div>
   </div>
 </template>

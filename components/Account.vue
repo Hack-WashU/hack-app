@@ -107,9 +107,9 @@ const staticFormClass =
     </div>
     <div class="form-control">
       <h4>Shirt Size</h4>
-      <p class="text-center">
+      <h3 class="text-center">
         {{ shirt }}
-      </p>
+      </h3>
     </div>
 
     <div class="m-5">
