@@ -4,7 +4,7 @@ let { body } = await queryContent().where({ title: "Jobs" }).findOne();
 <template>
   <div class="flex justify-center">
     <div class="prose prose-lg mt-10">
-      <h1 class="text-center">Sponsor Job Postings 👨‍💻👩‍💻</h1>
+      <h1 class="text-center">Sponsor Job Postings 👩‍💻</h1>
       <p class="text-center">
         This page contains open positions our hackathon sponsors are actively
         recruiting for right now
