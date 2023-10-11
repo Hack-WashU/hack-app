@@ -18,12 +18,12 @@
 
 ## Sunday
 
-| Event Name             | Location     | Date and Time   | Notes                                                                                                                                       |
-| ---------------------- | ------------ | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| HACKING ENDS!          | Everywhere   | Sunday 1:00 PM  | Hard deadline! No extensions!                                                                                                               |
-| (Optional) Group Demos | Wrighton 300 | Sunday 1:30PM   | Come share what you made with everyone! There will be an ad-hoc demo sign up sheet. Everyone who demos will be entered into a prize raffle! |
-| Round 1 Judging Begins | Everywhere   | Sunday 1:30 PM  |                                                                                                                                             |
-| Round 1 Judging Ends   | Everywhere   | Sunday 2:30 PM  |                                                                                                                                             |
-| Round 2 Judging Begins | Wrighton 300 | Sunday 3:00 PM  | The top 5 teams of each division will give _brief_ project demos!                                                                           |
-| Round 2 Judging Ends   | Wrighton 300 | Sunday ~4:30 PM |                                                                                                                                             |
-| Closing Ceremony!      | Wrighton 300 | (After Judging) | If you aren't present to receive a prize, you'll have 24 hours to claim it via email.                                                       |
+| Event Name             | Location     | Date and Time                              | Notes                                                                                                                                       |
+| ---------------------- | ------------ | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| HACKING ENDS!          | Everywhere   | Sunday 1:00 PM                             | Hard deadline! No extensions!                                                                                                               |
+| (Optional) Group Demos | Wrighton 300 | Sunday 1:30PM                              | Come share what you made with everyone! There will be an ad-hoc demo sign up sheet. Everyone who demos will be entered into a prize raffle! |
+| Round 1 Judging Begins | Everywhere   | Sunday 1:30 PM                             |                                                                                                                                             |
+| Round 1 Judging Ends   | Everywhere   | Sunday 2:30 PM                             |                                                                                                                                             |
+| Round 2 Judging Begins | Wrighton 300 | Sunday 3:00 PM                             | The top 5 teams of each division will give _brief_ project demos!                                                                           |
+| Round 2 Judging Ends   | Wrighton 300 | Sunday ~4:30 PM                            |                                                                                                                                             |
+| Closing Ceremony!      | Wrighton 300 | (After Judging) Starting no later than 5pm | If you aren't present to receive a prize, you'll have 24 hours to claim it via email.                                                       |
