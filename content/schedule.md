@@ -1,7 +1,7 @@
-### Saturday
+## Saturday
 
 | Event Name                              | Location         | Date and Time                   | Notes                                                                                                                                                                   |
-|-----------------------------------------|------------------|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| --------------------------------------- | ---------------- | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Check In                                | Lopata Gallery   | Saturday 8:00 AM                | Form a line from Lopata entrance to Crow Hall                                                                                                                           |
 | Opening Ceremony                        | Wrighton 300     | Saturday 9:00 AM                | May start late depending on Check-in Line                                                                                                                               |
 | Hacking Begins                          | Everywhere       | Saturday ~10:00 AM              | Dependent on Opening Ceremony                                                                                                                                           |
@@ -16,14 +16,14 @@
 | \[Workshop\] Data Analytics @ Snowflake | TBD              | Saturday 3:30PM                 | Come learn about Snowflake's data analytics efforts from a 3x WashU alum at the company!                                                                                |
 | Dinner 🍕                               | Lopata Gallery   | Saturday 6pm                    | Pizza time!                                                                                                                                                             |
 
+## Sunday
 
-### Sunday
 | Event Name             | Location     | Date and Time   | Notes                                                                                                                                       |
-|------------------------|--------------|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| ---------------------- | ------------ | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | HACKING ENDS!          | Everywhere   | Sunday 1:00 PM  | Hard deadline! No extensions!                                                                                                               |
 | (Optional) Group Demos | Wrighton 300 | Sunday 1:30PM   | Come share what you made with everyone! There will be an ad-hoc demo sign up sheet. Everyone who demos will be entered into a prize raffle! |
 | Round 1 Judging Begins | Everywhere   | Sunday 1:30 PM  |                                                                                                                                             |
 | Round 1 Judging Ends   | Everywhere   | Sunday 2:30 PM  |                                                                                                                                             |
-| Round 2 Judging Begins | Wrighton 300   | Sunday 3:00 PM  | The top 5 teams of each division will give *brief* project demos!                                                                             |
-| Round 2 Judging Ends   | Wrighton 300   | Sunday ~4:30 PM |                                                                                                                                             |
-| Closing Ceremony!      | Wrighton 300   | (After Judging) | If you aren't present to receive a prize, you'll have 24 hours to claim it via email.                                                       |
+| Round 2 Judging Begins | Wrighton 300 | Sunday 3:00 PM  | The top 5 teams of each division will give _brief_ project demos!                                                                           |
+| Round 2 Judging Ends   | Wrighton 300 | Sunday ~4:30 PM |                                                                                                                                             |
+| Closing Ceremony!      | Wrighton 300 | (After Judging) | If you aren't present to receive a prize, you'll have 24 hours to claim it via email.                                                       |

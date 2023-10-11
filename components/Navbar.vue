@@ -55,22 +55,6 @@ onMounted(async () => {
       <a class="btn btn-ghost normal-case text-xl" href="/account"
         >Hack WashU</a
       >
-      <div class="end">
-        <a
-          target="_blank"
-          class="mr-2"
-          v-if="role !== 'admin'"
-          href="https://instagram.com/hackwashu"
-          ><ph-instagram-logo :size="32"
-        /></a>
-        <a
-          target="_blank"
-          class="mr-2"
-          v-if="role !== 'admin'"
-          href="https://twitch.tv/hackwashu"
-          ><ph-twitch-logo :size="32"
-        /></a>
-      </div>
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
@@ -82,7 +66,7 @@ onMounted(async () => {
         <li><a href="/faq">FAQ</a></li>
       </ul>
     </div>
-    <div class="navbar-end hidden lg:flex">
+    <div class="navbar-end lg:flex">
       <a
         target="_blank"
         class="mr-2"
