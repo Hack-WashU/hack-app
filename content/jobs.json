@@ -1,0 +1,97 @@
+[
+  {
+    "Section": "Mastercard",
+    "Jobs": [
+      {
+        "Name": "Mastercard Internship Opportunities",
+        "Links": [
+          {
+            "Name": "BizOps Engineer Intern, Summer 2024",
+            "Link": "bruhttps://careers.mastercard.com/us/en/job/R-201224/BizOps-Engineer-Intern-Summer-2024-United-Statesh"
+          },
+          {
+            "Name": "Data Engineering Intern - Summer 2024",
+            "Link": "https://careers.mastercard.com/us/en/job/R-201225/Data-Engineering-Intern-Summer-2024-United-States"
+          },
+          {
+            "Name": "Technical Program Management / Program Management Intern, Summer 2024",
+            "Link": "https://careers.mastercard.com/us/en/job/R-201229/Technical-Program-Management-Program-Management-Intern-Summer-2024-United-States"
+          },
+          {
+            "Name": "Project Management Intern, Summer 2024",
+            "Link": "https://careers.mastercard.com/us/en/job/R-201230/Project-Management-Intern-Summer-2024-United-States"
+          },
+          {
+            "Name": "Information Security Engineering Intern, Summer 2024",
+            "Link": "https://careers.mastercard.com/us/en/job/R-201227/Information-Security-Engineering-Intern-Summer-2024-United-States"
+          }
+        ]
+      },
+      {
+        "Name": "Mastercard Full-Time Opportunities",
+        "Links": [
+          {
+            "Name": "Data Scientist",
+            "Link": "https://careers.mastercard.com/us/en/job/R-199295/Data-Scientist-Launch-Program-2024-United-States"
+          },
+          {
+            "Name": "Project Manager 1",
+            "Link": "https://careers.mastercard.com/us/en/job/R-198449/Project-Manager-I"
+          },
+          {
+            "Name": "Data Engineer",
+            "Link": "https://careers.mastercard.com/us/en/job/R-201218/Data-Engineer-Launch-Program-2024-United-States"
+          },
+          {
+            "Name": "Analyst, Data Strategy, Launch Program 2024",
+            "Link": "https://careers.mastercard.com/us/en/job/R-201219/Analyst-Data-Strategy-Launch-Program-2024-United-States"
+          },
+          {
+            "Name": "BizOps Engineer 1",
+            "Link": "https://careers.mastercard.com/us/en/job/R-202999/BizOps-Engineer-I"
+          },
+          {
+            "Name": "Site Reliability Engineer 1",
+            "Link": "brhttps://careers.mastercard.com/us/en/job/R-202003/Site-Reliability-Engineer-Iuh"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Section": "Spectrum",
+    "Jobs": [
+      {
+        "Name": "Spectrum Internship Opportunities",
+        "Links": [
+          {
+            "Name": "Project Manager, Summer 2024",
+            "Link": "https://jobs.spectrum.com/job/st-louis/2024-summer-intern-project-manager/4673/54748939936"
+          },
+          {
+            "Name": "Associate System Administrator, Summer 2024",
+            "Link": "https://jobs.spectrum.com/job/st-louis/2024-summer-intern-associate-system-administrator/4673/54932462816"
+          },
+          {
+            "Name": "Business Analyst – ERP Management, Summer 2024",
+            "Link": "https://jobs.spectrum.com/job/st-louis/2024-summer-intern-business-analyst-erp-management/4673/54302772080"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Section": "RGA",
+    "Jobs": [
+      {
+        "Name": "RGA Internship Opportunities",
+        "Links": [
+          {
+            "Name": "Summer Intern - Global Technology",
+            "Link": "https://www.linkedin.com/jobs/view/3693862161/"
+          }
+        ]
+      }
+    ]
+  }
+]

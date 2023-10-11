@@ -18,7 +18,7 @@ export default defineNuxtConfig({
     redirectOptions: {
       login: "/",
       callback: "/confirm",
-      exclude: ["/", "/faq", "/spaces", "/schedule", "/resources"],
+      exclude: ["/", "/faq", "/spaces", "/schedule", "/resources", "/jobs"],
     },
   },
   colorMode: {

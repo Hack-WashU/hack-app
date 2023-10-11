@@ -1,0 +1,17 @@
+[
+  {
+    "Section": "React",
+    "Resources": [
+      {
+        "Name": "Official React Docs",
+        "Description": "Use these react docs as a starting point to learn the basics of react",
+        "Link": "https://react.dev"
+      },
+      {
+        "Name": "Next.JS React Docs",
+        "Description": "More informative react documentation from Next.js on how to deploy your react app",
+        "Link": "https://nextjs.org/docs/pages/building-your-application"
+      }
+    ]
+  }
+]

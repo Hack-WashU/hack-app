@@ -42,6 +42,7 @@ onMounted(async () => {
           <li><a href="/spaces">Space Information</a></li>
           <li><a href="/schedule">Schedule</a></li>
           <li><a href="/resources">Project Resources</a></li>
+          <li><a href="/jobs">Jobs</a></li>
           <li><a href="/faq">FAQ</a></li>
           <li v-if="role === 'admin'">
             <a class="btn btn-primary" href="/admin">Admin Page</a>
@@ -58,6 +59,7 @@ onMounted(async () => {
         <li><a href="/spaces">Space Information</a></li>
         <li><a href="/schedule">Schedule</a></li>
         <li><a href="/resources">Project Resources</a></li>
+        <li><a href="/jobs">Jobs</a></li>
         <li><a href="/faq">FAQ</a></li>
       </ul>
     </div>
