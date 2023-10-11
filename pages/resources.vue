@@ -2,6 +2,9 @@
 let { body } = await queryContent().where({ title: "Resources" }).findOne();
 </script>
 <template>
+  <head>
+    <title>Hack WashU - Resources</title>
+  </head>
   <div class="flex justify-center">
     <div class="prose prose-lg mt-10">
       <h1 class="text-center">Project Resources 💻</h1>

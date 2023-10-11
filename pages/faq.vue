@@ -2,6 +2,9 @@
 let { body } = await queryContent().where({ title: "Faq" }).findOne();
 </script>
 <template>
+  <head>
+    <title>Hack WashU - FAQ</title>
+  </head>
   <div class="flex justify-center">
     <div class="prose prose-lg mt-10">
       <h1 class="text-center">Hack WashU FAQ 🤔❓</h1>
