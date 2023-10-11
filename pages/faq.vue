@@ -29,6 +29,7 @@ let { body } = await queryContent().where({ title: "Faq" }).findOne();
         </div>
       </div>
       <div class="mb-30"></div>
+      <div class="mb-20"></div>
     </div>
   </div>
 </template>
