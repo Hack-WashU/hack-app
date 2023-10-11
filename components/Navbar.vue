@@ -44,6 +44,24 @@ onMounted(async () => {
           <li><a href="/resources">Project Resources</a></li>
           <li><a href="/jobs">Jobs</a></li>
           <li><a href="/faq">FAQ</a></li>
+          <li>
+            <a
+              target="_blank"
+              class="mr-2"
+              v-if="role !== 'admin'"
+              href="https://instagram.com/hackwashu"
+              ><img src="../assets/instagram.png" width="24" height="24"
+            /></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              class="mr-2"
+              v-if="role !== 'admin'"
+              href="https://twitch.tv/hackwashu/hackwashu"
+              ><img src="../assets/twitch.png" width="24" height="24"
+            /></a>
+          </li>
           <li v-if="role === 'admin'">
             <a class="btn btn-primary" href="/admin">Admin Page</a>
           </li>
@@ -63,10 +81,22 @@ onMounted(async () => {
         <li><a href="/faq">FAQ</a></li>
       </ul>
     </div>
-    <div class="navbar-end">
-      <a class="btn btn-primary" v-if="role === 'admin'" href="/admin"
-        >Admin Page</a
-      >
+    <div class="navbar-end hidden lg:flex">
+      <a
+        target="_blank"
+        class="mr-2"
+        v-if="role !== 'admin'"
+        href="https://instagram.com/hackwashu"
+        ><img src="../assets/instagram.png" width="24" height="24"
+      /></a>
+      <a
+        target="_blank"
+        class="mr-2"
+        v-if="role !== 'admin'"
+        href="https://twitch.tv/hackwashu"
+        ><img src="../assets/twitch.png" width="24" height="24"
+      /></a>
+      <a v-if="role === 'admin'" href="/admin">Admin Page</a>
     </div>
   </div>
 </template>
