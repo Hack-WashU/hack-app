@@ -97,13 +97,7 @@ const staticFormClass =
   <form :class="[staticFormClass]" @submit.prevent="updateProfile">
     <div class="form-control">
       <label for="email">Email</label>
-      <input
-        id="email"
-        type="text"
-        :value="email"
-        class="input input-bordered w-full max-w-xs"
-        disabled
-      />
+      <input id="email" type="text" :value="email" class="input input-bordered w-full max-w-xs" disabled />
     </div>
     <div class="form-control text-center">
       <h4>Shirt Size</h4>
@@ -113,12 +107,7 @@ const staticFormClass =
     </div>
 
     <div class="m-5">
-      <button
-        class="btn"
-        :class="determineBackgroundColor()"
-        @click="signOut"
-        :disabled="loading"
-      >
+      <button class="btn" :class="determineBackgroundColor()" @click="signOut" :disabled="loading">
         Sign Out
       </button>
     </div>

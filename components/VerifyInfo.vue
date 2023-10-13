@@ -12,8 +12,6 @@ import { PhDiscordLogo } from "@phosphor-icons/vue";
         channel
       </div>
     </div>
-    <a class="btn btn-warning btn-md" href="https://discord.gg/VZmT3Zzeb2"
-      >Discord</a
-    >
+    <a class="btn btn-warning btn-md" href="https://discord.gg/VZmT3Zzeb2">Discord</a>
   </div>
 </template>
