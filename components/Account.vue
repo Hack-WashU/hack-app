@@ -124,3 +124,10 @@ const staticFormClass =
     </div>
   </form>
 </template>
+
+<style>
+h1 {
+  color: white;
+  border-radius: 10px;
+}
+</style>
