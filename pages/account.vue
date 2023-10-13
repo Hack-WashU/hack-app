@@ -63,3 +63,9 @@ console.log(`
     <h1 v-else>You are not checked in</h1>
   </div>
 </template>
+
+<style>
+h1 {
+  font-size: 2em !important;
+}
+</style>

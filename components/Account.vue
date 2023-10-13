@@ -127,7 +127,10 @@ const staticFormClass =
 
 <style>
 h1 {
-  color: white;
+  color: white !important;
+  padding: 5px;
   border-radius: 10px;
+  margin-bottom: -10px;
+  font-size: 4em;
 }
 </style>
