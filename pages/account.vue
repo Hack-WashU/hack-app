@@ -18,7 +18,7 @@ if (data) {
   checked_in.value = data.checked_in;
 }
 
-console.log("TODO: Build an easter egg.")
+console.log("TODO: Build an easter egg.");
 console.log(`
      .-.            .-.
     /   \\          /   \\
@@ -44,7 +44,7 @@ console.log(`
    /     \`-;----=--;--\'   \\
    \\    _.-\'        \'.    /
     \`\"\"\`              \`\"\"\`
-`)
+`);
 </script>
 
 <template>
@@ -56,10 +56,10 @@ console.log(`
     </div>
   </div>
   <div v-if="checked_in" class="flex justify-center mt-5">
-    <h2>You're checked in!</h2>
+    <h1>You're checked in!</h1>
   </div>
   <div class="flex justify-center">
     <VerifyInfo v-if="checked_in" class="justify-center mt-5" />
-    <h2 v-else>You are not checked in</h2>
+    <h1 v-else>You are not checked in</h1>
   </div>
 </template>

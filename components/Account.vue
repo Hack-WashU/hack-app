@@ -105,11 +105,11 @@ const staticFormClass =
         disabled
       />
     </div>
-    <div class="form-control">
+    <div class="form-control text-center">
       <h4>Shirt Size</h4>
-      <h3 class="text-center">
+      <h1 :class="determineBackgroundColor()">
         {{ shirt }}
-      </h3>
+      </h1>
     </div>
 
     <div class="m-5">
