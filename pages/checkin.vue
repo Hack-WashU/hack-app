@@ -23,7 +23,7 @@ const user = useSupabaseUser()
 
 const { data } = await supabase.from('profiles').select(`checked_in`).eq('id', user.value.id).single()
 
-if (checkin_status && data && !data.checked_in) {
+if (checkin_status() && data && !data.checked_in) {
   try {
     const { error: invokeError } = await supabase.functions.invoke('checkin-sheet')
     if (invokeError) throw invokeError
