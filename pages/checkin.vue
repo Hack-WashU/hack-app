@@ -12,11 +12,7 @@ dayjs.extend(timezone);
 
 // This is the global checkin variable
 // Setting will enable checkins.
-const checkin_status = () => {
-  const currentTime = dayjs.tz(dayjs(), "America/Chicago");
-  const checkinStart = dayjs.tz("2023-10-14 07:55:00", "America/Chicago");
-  return currentTime.isAfter(checkinStart);
-};
+const checkin_status = false;
 
 const supabase = useSupabaseClient()
 const user = useSupabaseUser()
