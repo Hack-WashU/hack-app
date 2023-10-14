@@ -106,6 +106,16 @@
         "Name": "Figma",
         "Description": "Figma is a great design tool to mock up your website before your start building it in code",
         "Link": "https://figma.com"
+      },
+      {
+        "Name": "Radix UI",
+        "Description": "Super easy component library",
+        "Link": "https://www.radix-ui.com/"
+      },
+      {
+        "Name": "Chad CN",
+        "Description": "A super easy to use and modern component library that just works for your website",
+        "Link": "https://ui.shadcn.com/"
       }
     ]
   },
