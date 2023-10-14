@@ -13,5 +13,110 @@
         "Link": "https://nextjs.org/docs/pages/building-your-application"
       }
     ]
+  },
+  {
+    "Section": "Firebase",
+    "Resources": [
+      {
+        "Name": "Firebase documentation",
+        "Description": "Resource that covers all of the basics; explores different firebase offerings and how you can integrate them into your app",
+        "Link": "https://firebase.google.com/docs/guides"
+      },
+      {
+        "Name": "Tutorial that walks you through how to add “Login with Google/FB/etc” into your react app",
+        "Description": "How to integrate Firebase auth into your React app",
+        "Link": "https://www.freecodecamp.org/news/use-firebase-authentication-in-a-react-app/"
+      },
+      {
+        "Name": "Firebase tutorial for several features",
+        "Description": "Learn how to use Firestore and integrate it into your app, a NoSQL database",
+        "Link": "https://fireship.io/lessons/firebase-quickstart/"
+      }
+    ]
+  },
+  {
+    "Section": "Unity",
+    "Resources": [
+      {
+        "Name": "Unity Documentation",
+        "Description": "A documentation that covers information about how to use Unity Editor, Unity scripting, and assets",
+        "Link": "https://docs.unity.com/"
+      },
+      {
+        "Name": "WebGL",
+        "Description": "You can deploy your Unity games or projects in a web format. A website that hosts your projects is itch.io",
+        "Link": "https://www.youtube.com/watch?v=7xGhPUz8C2M"
+      },
+      {
+        "Name": "Getting started with Unity",
+        "Description": "The most basic tutorial that walks through everything needed for making a simple game",
+        "Link": "https://www.youtube.com/watch?v=pwZpJzpE2lQ"
+      }
+    ]
+  },
+  {
+    "Section": "Three.js (web-based animation)",
+    "Resources": [
+      {
+        "Name": "Three.js Documentation",
+        "Description": "Interested in incorporting 3D models and objects on your website? Check out Three.js",
+        "Link": "https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene"
+      },
+      {
+        "Name": "Getting started with Three.js and integrate it on a website",
+        "Description": "Tutorial that walks you through how to make your first webpage with three.js incorporated",
+        "Link": "https://www.youtube.com/watch?v=A00WHN32qGE"
+      },
+      {
+        "Name": "Three.js examples",
+        "Description": "Examples (with code) that used Three.js. You can also check out the code being used for creating these examples by clicking the “< >” icon",
+        "Link": "https://threejs.org/examples/"
+      }
+    ]
+  },
+  {
+    "Section": "NuxtJS (Vue Framework)",
+    "Resources": [
+      {
+        "Name": "NuxtJS Documentation ",
+        "Description": "If you’ve never used React, Vue and Nuxt is probably easier to get started with than using React/Next. Script tags are extremely intuitive, and it “just works” by using directories.",
+        "Link": "https://nuxt.com/docs"
+      }
+    ]
+  },
+  {
+    "Section": "Design/CSS/Pretty Things",
+    "Resources": [
+      {
+        "Name": "Tailwind",
+        "Description": "App.hackwashu.com was built with nuxt using tailwind for css styles and makes it easy to make websites look good",
+        "Link": "https://tailwindcss.com/"
+      },
+      {
+        "Name": "DaisyUI",
+        "Description": "App.hackwashu.com was built with Daisy UI that has a lot of ui icons to plug in to your website",
+        "Link": "https://daisyui.com/"
+      },
+      {
+        "Name": "PhosphorIcons",
+        "Description": "App.hackwashu.com uses phosphor icons for company logos",
+        "Link": "https://phosphoricons.com/"
+      },
+      {
+        "Name": "Figma",
+        "Description": "Figma is a great design tool to mock up your website before your start building it in code",
+        "Link": "https://figma.com"
+      }
+    ]
+  },
+  {
+    "Section": "Databases",
+    "Resources": [
+      {
+        "Name": "Supabase",
+        "Description": "There are getting started guides for virtually every framework. After poking through them all, it’s by far the easiest to get started with Nuxt (sorry Next fans)",
+        "Link": "https://supabase.com/docs/guides/getting-started/tutorials/with-nuxt-3"
+      }
+    ]
   }
 ]
