@@ -1,9 +1,22 @@
 <script setup lang="ts">
 import {generate} from 'random-words'
 
+import dayjs from "dayjs";
+import utc from "dayjs/plugin/utc";
+import timezone from "dayjs/plugin/timezone";
+import duration from "dayjs/plugin/duration";
+
+dayjs.extend(duration);
+dayjs.extend(utc);
+dayjs.extend(timezone);
+
 // This is the global checkin variable
 // Setting will enable checkins.
-const checkin_status = false;
+const checkin_status = () => {
+  const currentTime = dayjs.tz(dayjs(), "America/Chicago");
+  const checkinStart = dayjs.tz("2023-10-14 08:00:00", "America/Chicago");
+  return currentTime.isAfter(checkinStart);
+};
 
 const supabase = useSupabaseClient()
 const user = useSupabaseUser()
