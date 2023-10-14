@@ -6,6 +6,9 @@ import utc from "dayjs/plugin/utc";
 import timezone from "dayjs/plugin/timezone";
 import duration from "dayjs/plugin/duration";
 
+dayjs.extend(duration);
+dayjs.extend(utc);
+dayjs.extend(timezone);
 
 if (!user.value) {
   await navigateTo("/");
@@ -25,7 +28,7 @@ if (data) {
 
 const afterCheckInStarts = computed<boolean>(() => {
   const currentTime = dayjs.tz(dayjs(), "America/Chicago");
-  const checkinStart = dayjs.tz("2023-10-14 08:00:00", "America/Chicago");
+  const checkinStart = dayjs.tz("2023-10-14 07:55:00", "America/Chicago");
   return currentTime.isAfter(checkinStart);
 });
 
@@ -75,10 +78,18 @@ console.log(`
       <h1>You are not checked in</h1>
       <div v-if="afterCheckInStarts">
         <p>Click the button below if you're ready to get your swag.</p>
-        <p>If you're not physically present at the event yet, you should <strong class="text-secondary">not</strong> click this button!</p>
-        <a v-if="afterCheckInStarts" class="btn btn-warning btn-md mt-5" href="/checkin">Check In</a>
+        <p>
+          If you're not physically present at the event yet, you should
+          <strong class="text-secondary">not</strong> click this button!
+        </p>
+        <a
+          v-if="afterCheckInStarts"
+          class="btn btn-warning btn-md mt-5"
+          href="/checkin"
+          >Check In</a
+        >
       </div>
-      <p v-else>Check will be enabled at 5pm on 10/13!</p> 
+      <p v-else>Check will be enabled at 5pm on 10/13!</p>
     </div>
   </div>
 </template>
