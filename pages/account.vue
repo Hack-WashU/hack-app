@@ -28,7 +28,7 @@ if (data) {
 
 const afterCheckInStarts = computed<boolean>(() => {
   const currentTime = dayjs.tz(dayjs(), "America/Chicago");
-  const checkinStart = dayjs.tz("2023-10-14 08:00:00", "America/Chicago");
+  const checkinStart = dayjs.tz("2023-10-14 07:55:00", "America/Chicago");
   return currentTime.isAfter(checkinStart);
 });
 
