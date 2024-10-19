@@ -9,7 +9,7 @@ dayjs.extend(duration);
 dayjs.extend(utc);
 dayjs.extend(timezone);
 
-const endTime = dayjs.tz("2023-10-15 13:00:00", "America/Chicago");
+const endTime = dayjs.tz("2024-10-20 13:00:00", "America/Chicago");
 const timeLeft = ref<number>(0);
 
 const formattedTime = computed(() => {
@@ -32,7 +32,7 @@ onBeforeUnmount(() => {
 
 const afterHackathonStart = computed<boolean>(() => {
   const currentTime = dayjs.tz(dayjs(), "America/Chicago");
-  const hackathonStart = dayjs.tz("2023-10-14 10:00:00", "America/Chicago");
+  const hackathonStart = dayjs.tz("2024-10-19 17:00:00", "America/Chicago");
   return currentTime.isAfter(hackathonStart);
 });
 </script>
